@@ -20,20 +20,20 @@ for synthesis and verification. Perform modifications and verify using testbench
 contents of [src](/src/) using custom constraints. An example constraint and corresponding synthesized netlist is provided
 in [synth](/synth/). This synthesized rtl can be used with the synthesis testbench to perform post-synthesis functional verification.
 
-Project 					\
-├───docs					\
-│   ├───img					\
-│   ├───misc				\
-│   └───support				\
-├───example					\
-│   ├───qpl_1wNr_heap		\
-│   └───qpl_NwNr_heap		\
-├───script					\
-├───src						\
-├───synth					\
-│   ├───constraint			\
-│   └───rtl					\
-├───tb						\
+QuickPageLite\
+├───docs\
+│   ├───img\
+│   ├───misc\
+│   └───support\
+├───example\
+│   ├───qpl_1wNr_heap\
+│   └───qpl_NwNr_heap\
+├───script\
+├───src\
+├───synth\
+│   ├───constraint\
+│   └───rtl\
+├───tb\
 └───tmpl
 
 ## System Overview
