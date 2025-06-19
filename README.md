@@ -176,7 +176,7 @@ translator's base (primary) port. For safety, the translator does not reflect wr
 oreiented, all writes are reflected in memory. The second field in the packet (virtual address) is used to select a word from the logical address space of 
 the object. The virtual address is a combination of *{Line, Word}*; where 'Line' can range from (0 - *BLOCK_D*-1) and 'Word' ranges from (0 - *LINE_WORD*-1).
 
-![qpl_translator_wave](docs/img/qpl_translator_wave.png)
+![qpl_translator_wave](docs/img/qpl_translator_wave.png) \
 Figure 9.: Transactor (wrapper for translaotrs) base port example waveform for AXI4-Stream interface (cycle accurate upto 128 lines per block).
 
 The translator is meant to operate in a single cycle, hence there is no FIFO in it and the AXI4-Stream interface is for convenience. The *tlast* signal is 
@@ -261,9 +261,9 @@ pass *functional verification* or testing of any kind. The experiment was synthe
 
 ## Conclusion
 QPL is the result of a journey to support low-latency *Runtime-Dynamic-Memory-Management* (DMM) and the reasoning behind the need for QPL, including references 
-can be found in the reports present in [support](/docs/support/). The whole work is aimed towards providing a plug-n-play DMM module to realize various dynamic 
-algorithms on FPGA. **Future work** will include extending QPL to support multi-block management, allowing for significant decrease in resource utilization by 
+can be found in the reports present in [support](/docs/support/). The whole work is aimed towards providing a plug-n-play DMM module to realize various dynamic/ 
+memory-centric algorithms on FPGA. **Future work** will include extending QPL to support multi-block management, allowing for significant decrease in resource utilization by 
 using a common (de)allocator mechanism at the expense of losing parallel block allocation. In-addition, further work will consist of building an accelerator 
-around QPL (1wNr config) to asses if fast DMM does provide some performance benefits, or if all of this is just a convoluted day-dream :).
+around QPL (1wNr config) to asses if fast DMM does provide some performance benefits, or if all of this is just a convoluted day-dream :) .
 
 P.S: Please feel free to contact me (amruthj10@gmail.com) and critique this work.
