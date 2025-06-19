@@ -1,8 +1,8 @@
 # QuickPageLite
-Faster and Lighter version of QuickPage for small near Shared-Memory.
+Faster and leaner version of QuickPage for Dynamic-Memory-Management of near Shared-Memory in FPGAs.
 
 ## Introduction
-**QuickPageLite** (QPL) introduces support for *malloc()* and *free()* into *Shared-Memory*(BRAMs). The distinctive 
+**QuickPageLite** (QPL) introduces hardware support for *malloc()* and *free()* into *Shared-Memory*(BRAMs). The distinctive 
 features of QPL include:\
 &emsp; (1) Low latency **O(1) allocation** @100MHz (3 cycles for valid reply, pipelined).\
 &emsp; (2) Low latency **O(1) deallocation** @100MHz (3 cycles for valid reply, pipelined).\
